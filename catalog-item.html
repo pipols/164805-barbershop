@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css" media="screen" title="no title">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container">
+            <nav class="main-navigation">
+                <ul>
+                    <li>
+                        <a href="#">Информация</a>
+                    </li>
+                    <li>
+                        <a href="#">Новости</a>
+                    </li>
+                    <li>
+                        <a href="#">Прайс-лист</a>
+                    </li>
+                    <li>
+                        <a href="#">Магазин</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="user-block">
+                <a class="login" href="#">Вход</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h1>набор для путешествий «Baxter of California»</h1>
+            <ul class="bread-crumbs">
+                <li><a href="#">главная</a></li>
+                <li><a href="#">магазин</a></li>
+                <li><a href="#">средства для ухода</a></li>
+                <li>набор для путешествий «Baxter of California»</li>
+            </ul>
+            <!--
+            div.slider>(input[type="radio"]#slider__min-img-$[name="slider-switch"]+label[for="slider__min-img-$"]>img.slider__min-img-$[src="img/catalog-img-$"][width="140"]^img.slider__big-img-$[src="img/catalog-img-$"])*3 -->
+            <div class="slider">
+                <input type="radio" id="slider__min-img-1" name="slider-switch">
+                <label for="slider__min-img-1"><img src="img/catalog-img-1" alt="" class="slider__min-img-1" width="140"></label>
+                <img src="img/catalog-img-1" alt="" class="slider__big-img-1">
+                <input type="radio" id="slider__min-img-2" name="slider-switch">
+                <label for="slider__min-img-2"><img src="img/catalog-img-2" alt="" class="slider__min-img-2" width="140"></label>
+                <img src="img/catalog-img-2" alt="" class="slider__big-img-2">
+                <input type="radio" id="slider__min-img-3" name="slider-switch">
+                <label for="slider__min-img-3"><img src="img/catalog-img-3" alt="" class="slider__min-img-3" width="140"></label>
+                <img src="img/catalog-img-3" alt="" class="slider__big-img-3">
+            </div>
+            <div class=item-description-wrapper>
+                <div class="item-description">
+                    <!-- div.item-description__avalible-status+div.item-description__vendor-code+p.item-description__text+span.item-description__cost+button[type="button"].item-description__btn-buy -->
+                    <div class="item-description__avalible-status"></div>
+                    <div class="item-description__vendor-code"></div>
+                    <p class="item-description__text"></p>
+                    <span class="item-description__cost"></span>
+                    <button type="button" class="item-description__btn-buy btn"></button>
+
+                    <!-- div.item-description__item-kit>h2+ul>(li*5) -->
+                    <div class="item-description__item-kit">
+                        <h2></h2>
+                        <ul>
+                            <li>Средство для умывания (50 мл)</li>
+                            <li>Увлажняющий крем (50 мл)</li>
+                            <li>Крем для бритья (50 мл)</li>
+                            <li>Крем после бритья, шампунь (50 мл)</li>
+                            <li>Удобная кожаная косметичка</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="main-footer">
+        <div class="container">
+            <section class="footer-contacts">
+                Барбершоп «Бородинский»<br> Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+                <a href="#">Как нас найти?</a><br> Телефон: +7 (812) 666-02-66
+            </section>
+            <section class="footer-social">
+                <p>Давайте дружить!</p>
+                <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+                <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+                <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+            </section>
+            <section class="footer-copyright">
+                <p>Разработано:</p>
+                <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+            </section>
+        </div>
+    </footer>
+</body>
+
+</html>

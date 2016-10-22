@@ -8,62 +8,131 @@
 </head>
 
 <body>
-    <header>
-        <div class="wrapper">
-            <a class="main-header__logo" href="index.html"><img src="#" alt=""></a>
-            <ul class="main-header__menu">
-                <li><a href="#">информация</a></li>
-                <li><a href="#">новости</a></li>
-                <li><a href="#">прайс-лист</a></li>
-                <li><a class="main-header__link-active" href="#">магазин</a></li>
-                <li><a href="#">контакты</a></li>
-            </ul>
-            <a class="main-header__user-login" href="#"></a>
+    <header class="main-header">
+        <div class="container">
+            <nav class="main-navigation">
+                <ul>
+                    <li>
+                        <a href="#">Информация</a>
+                    </li>
+                    <li>
+                        <a href="#">Новости</a>
+                    </li>
+                    <li>
+                        <a href="#">Прайс-лист</a>
+                    </li>
+                    <li>
+                        <a href="#">Магазин</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="user-block">
+                <a class="login" href="#">Вход</a>
+            </div>
         </div>
     </header>
     <main>
-        <div class="wrapper">
-            <h1>набор для путешествий «Baxter of California»</h1>
+        <div class="container">
+            <h1>средства для ухода</h1>
             <ul class="bread-crumbs">
                 <li><a href="#">главная</a></li>
                 <li><a href="#">магазин</a></li>
-                <li><a href="#">средства для ухода</a></li>
-                <li><a href="#">набор для путешествий «Baxter of California»</a></li>
+                <li>средства для ухода</li>
             </ul>
-            <!-- Окончательно не решил как буду делать слайдер
-            div.slider>(input[type="radio"]#slider__min-img-$[name="slider-switch"]+label[for="slider__min-img-$"]>img.slider__min-img-$[src="img/catalog-img-$"]^img.slider__big-img-$)*3 -->
-            <div class="slider">
-                <input type="radio" id="slider__min-img-1" name="slider-switch">
-                <label for="slider__min-img-1"><img src="img/catalog-img-1" alt="" class="slider__min-img-1"></label>
-                <img src="" alt="" class="slider__big-img-1">
-                <input type="radio" id="slider__min-img-2" name="slider-switch">
-                <label for="slider__min-img-2"><img src="img/catalog-img-2" alt="" class="slider__min-img-2"></label>
-                <img src="" alt="" class="slider__big-img-2">
-                <input type="radio" id="slider__min-img-3" name="slider-switch">
-                <label for="slider__min-img-3"><img src="img/catalog-img-3" alt="" class="slider__min-img-3"></label>
-                <img src="" alt="" class="slider__big-img-3">
-            </div>
-
-            <div class="item-description">
-                 div.item-description__avalible-status+div.item-description__vendor-code+p.item-description__text+span.item-description__cost+button[type="button"].item-description__btn-buy
-
-
-                 <!-- div.item-description__item-kit>h2+ul>(li*5) -->
-                 <div class="item-description__item-kit">
-                     <h2></h2>
-                     <ul>
-                         <li>Средство для умывания (50 мл)</li>
-                         <li>Увлажняющий крем (50 мл)</li>
-                         <li>Крем для бритья (50 мл)</li>
-                         <li>Крем после бритья, шампунь (50 мл)</li>
-                         <li>Удобная кожаная косметичка</li>
-                     </ul>
-                 </div>
-            </div>
+            <form class="producers-form" action="#" method="post">
+                <fieldset>
+                    <legend>производители:</legend>
+                    <ul>
+                        <li><span></span><label><input type="checkbox" name="Baxter-of-California">Baxter of California</label></li>
+                        <li><span></span><label><input type="checkbox" name="Mr-Natty">Mr Natty</label></li>
+                        <li><span></span><label><input type="checkbox" name="Suavecito">Suavecito</label></li>
+                        <li><span></span><label><input type="checkbox" name="Malin+Goetz">Malin+Goetz</label></li>
+                        <li><span></span><label><input type="checkbox" name="Murray’s">Murray’s</label></li>
+                        <li><span></span><label><input type="checkbox" name="American-Crew">American Crew</label></li>
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>группы товаров:</legend>
+                    <ul>
+                        <li><span></span><input type="radio" name="product-groups" value="shaving-accessories"></li>
+                        <li><span></span><input type="radio" name="product-groups" value="preparations-for-the-care"></li>
+                        <li><span></span><input type="radio" name="product-groups" value="accessories"></li>
+                    </ul>
+                </fieldset>
+                <button class="producers-form__btn" type="button" name="button">показать</button>
+                <div class="gallery-items">
+                    <!-- (article.item-block>img+span.category+span.company+span.price+button.btn-buy[type="button"][value="купить"])*6 -->
+                    <article class="item-block">
+                        <img src="#" alt="">
+                        <span class="category"></span>
+                        <span class="company"></span>
+                        <span class="price"></span>
+                        <button class="btn-buy" type="button" value="купить"></button>
+                    </article>
+                    <article class="item-block">
+                        <img src="#" alt="">
+                        <span class="category"></span>
+                        <span class="company"></span>
+                        <span class="price"></span>
+                        <button class="btn-buy" type="button" value="купить"></button>
+                    </article>
+                    <article class="item-block">
+                        <img src="#" alt="">
+                        <span class="category"></span>
+                        <span class="company"></span>
+                        <span class="price"></span>
+                        <button class="btn-buy" type="button" value="купить"></button>
+                    </article>
+                    <article class="item-block">
+                        <img src="#" alt="">
+                        <span class="category"></span>
+                        <span class="company"></span>
+                        <span class="price"></span>
+                        <button class="btn-buy" type="button" value="купить"></button>
+                    </article>
+                    <article class="item-block">
+                        <img src="#" alt="">
+                        <span class="category"></span>
+                        <span class="company"></span>
+                        <span class="price"></span>
+                        <button class="btn-buy" type="button" value="купить"></button>
+                    </article>
+                    <article class="item-block">
+                        <img src="#" alt="">
+                        <span class="category"></span>
+                        <span class="company"></span>
+                        <span class="price"></span>
+                        <button class="btn-buy" type="button" value="купить"></button>
+                    </article>
+                    <div class="pagination-bottoms">
+                        <a href="#">1</a>
+                        <span>2</span> <a href="#">3</a>
+                        <a href="#">4</a>
+                    </div>
+                </div>
+            </form>
         </div>
     </main>
-    <footer>
-
+    <footer class="main-footer">
+        <div class="container">
+            <section class="footer-contacts">
+                Барбершоп «Бородинский»<br> Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+                <a href="#">Как нас найти?</a><br> Телефон: +7 (812) 666-02-66
+            </section>
+            <section class="footer-social">
+                <p>Давайте дружить!</p>
+                <a class="social-btn social-btn-vk" href="#"></a>
+                <a class="social-btn social-btn-fb" href="#"></a>
+                <a class="social-btn social-btn-inst" href="#"></a>
+            </section>
+            <section class="footer-copyright">
+                <p>Разработано:</p>
+                <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+            </section>
+        </div>
     </footer>
 </body>
 
